@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="https://code.highcharts.com/highcharts.js"></script>
+		<style>
+			body {
+				min-width: 310px;
+				max-width: 500px;
+				height: 400px;
+				margin: 0 auto;
+				text-align: center;
+			}
+			h1 {
+				font-family: Arial;
+				font-size: 2.5rem;
+				text-align: center;
+			}
+			.container {
+				width: 500px;
+				clear: both;
+				text-align: left;
+			}
+			.container input {
+				width: 100%;
+				clear: both;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>MoistureMe</h1>
+		<h2>Settings</h2>
+		<form>
+			<h3>WiFi</h3>
+			<div id="wifiSettings" class="container">
+				<label for="wifiMode">Mode:</label><br />
+				<select id="wifiMode">
+					<option value="AP">Access point</option>
+					<option value="STA">Client</option>
+				</select><br />
+				<label for="wifiSsid">SSID:</label>
+				<input type="text" id="wifiSsid"><br />
+				<label for="wifiPass">Password:</label>
+				<input type="text" id="wifiPass">
+			</div>
+			<h3>Flower Pots</h3>
+			<label for="numPots">Number of flower pots:</label>
+			<select id="numPots">
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+				<option value="7">7</option>
+				<option value="8">8</option>
+			</select><br />
+			<table style="margin-left: auto; margin-right: auto;">
+				<tr><th></th><th>Sensor Pin</th><th>Relay Pin</th><tr>
+				<tr><td>Pot 1</td><td><input type="text" id="potSensor1"></td><td><input type="text" id="potRelay1"></td></tr>
+				<tr><td>Pot 2</td><td><input type="text" id="potSensor2"></td><td><input type="text" id="potRelay2"></td></tr>
+				<tr><td>Pot 3</td><td><input type="text" id="potSensor3"></td><td><input type="text" id="potRelay3"></td></tr>
+				<tr><td>Pot 4</td><td><input type="text" id="potSensor4"></td><td><input type="text" id="potRelay4"></td></tr>
+				<tr><td>Pot 5</td><td><input type="text" id="potSensor5"></td><td><input type="text" id="potRelay5"></td></tr>
+				<tr><td>Pot 6</td><td><input type="text" id="potSensor6"></td><td><input type="text" id="potRelay6"></td></tr>
+				<tr><td>Pot 7</td><td><input type="text" id="potSensor7"></td><td><input type="text" id="potRelay7"></td></tr>
+				<tr><td>Pot 8</td><td><input type="text" id="potSensor8"></td><td><input type="text" id="potRelay8"></td></tr>
+			</table>
+			<h3>Pump</h3>
+			<table style="margin-left: auto; margin-right: auto;">
+				<tr><th>Trigger Pin</th><th>Echo Pin</th><th>Relay Pin</th><tr>
+				<tr><td><input type="text" id="pumpSensorTrig"></td><td><input type="text" id="pumpSensorEcho"></td><td><input type="text" id="pumpRelay"></td></tr>
+			<table>
+			<input type="submit">
+		</form>
+	</body>
+</html>
